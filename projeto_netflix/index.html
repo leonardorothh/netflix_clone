@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="script/script.js"></script>
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <div class="background" id="container">
+        <header class="header__netflix">
+            <img class="netflix__header__logo" src="img/Netflix-Logo.png">
+                <div class="logo">
+                    <img class="logo__usuario" src="img/Netflix-avatar.png">
+                </div>
+        </header> 
+
+        <section class="netflix__main">
+            <img class="advenvure_time__img" src="img/adventure_time_logo.png">
+                <p>O jovem Finn e seu fiel cachorro transmorfo embarcam em uma série de aventuras na pós-apocalítica Terra de Ooo.</p>
+                    <div class="buttons__main">
+                        <a class="button__play">
+                            <img src="img/play_button.png">
+                                Assistir</a>
+                                    <a class="button__info"> <img src="img/2984970.png">
+                                        Mais informações</a>
+                    </div>
+                </div>
+        </section> 
+    
+    
+
+        <section class="section__movies">
+                <div class="buttons_section">
+                    <p>Originais Netflix</p>
+                    <button class="scroll-button-left scroll-button-left" onclick="scrollFilmes('left')">&lt;</button>
+                    <button class="scroll-button-right scroll-button-right" onclick="scrollFilmes('right')">&gt;</button>
+                 </div>
+
+            <div class="filme-container">
+            
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/aliceinborderland.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/blackmirror.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/blueeyesamurai.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/elite.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/lucifer.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/lupin.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/manifest.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/onepiece.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/sex_education.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/strangerthings.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/thewitcher.jpg"></div>
+                <div class="filme"><img src="img/capa_filmes/originais_netflix/wandinha.jpg"></div>
+            </div>
+            </div>
+        
+        </section>
+        
+        <section class="emAlta__section">
+                <div class="buttons__emAlta">
+                    <p>Em Alta</p>
+                    <button class="scroll-button-left scroll-button-left" onclick="scrollFilmes_emAlta('left')">&lt;</button>
+                    <button class="scroll-button-right scroll-button-right" onclick="scrollFilmes_emAlta('right')">&gt;</button>
+                </div>
+                <div class="emAlta-container">
+                    
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/adventuretime.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/breakingbad.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/brooklyn99.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/flash.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/fuckinworld.jpg"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/gumball.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/henrydanger.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/icarly.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/lacasadepapel.jpg"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/peakyblinders.jpg"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/emAlta/samecat.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/zom100.webp"></div>
+                </div>
+        </section>
+
+        <section class="anime__section">
+                <div class="buttons__anime">
+                    <p>Animes</p>
+                    <button class="scroll-button-left scroll-button-left" onclick="scrollFilmes_anime('left')">&lt;</button>
+                    <button class="scroll-button-right scroll-button-right" onclick="scrollFilmes_anime('right')">&gt;</button>
+                </div>
+                <div class="anime__container">
+                    
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/baki.jpg"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/demonslayer.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/hajime.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/hunterxhunter.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/kuroko.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/nanatsu.jpg"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/naruto.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/onepiece.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/onepunch.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/zom100.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/naruto_shippuden.webp"></div>
+                <div class="filme_horizontal"><img src="img/capa_filmes/anime/deathnote.webp"></div>
+                </div>
+        </section>
+        <footer class="netflix__footer">
+            <p>Desenvolvido com &#128156; por Leonardo Vitor</p>
+        </footer>
+</body>
+</html>
